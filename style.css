@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    border: none;
+    width: 300px;
+    justify-content: space-between;
+    animation: border;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+
+}
+@keyframes border{
+    20%{
+        border-bottom: 5px solid cornflowerblue;}
+    55%{
+        border-bottom: 5px solid rgb(168, 42, 19);
+    }
+    45%{border-bottom: 5px solid rgb(192, 55, 185);}
+    50%{border-bottom: 5px solid rgb(237, 178, 100);}
+    30%{border-bottom: 5px solid lightgreen;}
+
+}
+.mov{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+    animation: move 1s infinite;
+    position: relative;
+    animation-direction: alternate;
+}
+#a1{
+    background-color: cornflowerblue;
+    animation-delay: 0.2s;
+}
+#a2{
+    background-color: rgb(111, 237, 100);
+    animation-delay: 0.4s;
+}
+#a3{
+    background-color: rgb(192, 55, 185);
+    animation-delay: 0.6s;
+}
+#a4{
+    background-color: rgb(237, 178, 100);
+    animation-delay: 0.8s;
+}
+#a5{
+    background-color: rgb(168, 42, 19);
+    animation-delay: 1s;
+}
+@keyframes move{
+    from{top: 0px}
+    to{top:-150px}
+}
