@@ -19,8 +19,6 @@
     animation: border;
     animation-iteration-count: infinite;
     animation-duration: 2s;
-
-
 }
 @keyframes border{
     20%{
